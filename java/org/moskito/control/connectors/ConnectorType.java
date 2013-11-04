@@ -2,21 +2,26 @@ package org.moskito.control.connectors;
 
 /**
  * Configured connector types for reference in config.
- *
+ * 
  * @author lrosenberg
  * @since 24.04.13 11:22
  */
 public enum ConnectorType {
-	/**
-	 * Http connection connector.
-	 */
-	HTTP,
-	/**
-	 * DistributeMe (RMI) connector.
-	 */
-	DISTRIBUTEME,
-	/**
-	 * No operation connector is used for testing purposes.
-	 */
-	NOOP;
+    /**
+     * Http connection connector.
+     */
+    HTTP,
+    /**
+     * DistributeMe (RMI) connector.
+     */
+    DISTRIBUTEME,
+    /**
+     * No operation connector is used for testing purposes.
+     */
+    NOOP,
+
+    /**
+     * ake: just check http-status code for pages without moskito-agent
+     */
+    IS_ALIVE;
 }
